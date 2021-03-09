@@ -60,10 +60,17 @@ def read_videos_from_txt():
 			videos.append(video)
 	return videos
 
-def main():
-	videos = read_videos()
-	write_videos_txt(videos)	
-	videos = read_videos_from_txt()
-	print_videos(videos)
+def read_playlist():
+    playlist_name = input("Enter playlist name: ")
+    playlist_description = input("")
 
+def main():
+	# videos = read_videos()
+	# write_videos_txt(videos)	
+	# videos = read_videos_from_txt()
+	# print_videos(videos)
+    playlist = read_playlist()
+    write_playlist_txt(playlist)
+    playlist = read_playlist_from_txt()
+    print_playlist(playlist)
 main()
